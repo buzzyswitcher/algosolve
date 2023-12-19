@@ -2,6 +2,8 @@ package ru.volkov.leetcode.easy.find_numbers_with_even_number_of_digits;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class SolutionTest {
 
     @Test

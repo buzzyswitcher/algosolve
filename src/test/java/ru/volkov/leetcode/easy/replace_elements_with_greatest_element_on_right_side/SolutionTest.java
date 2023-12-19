@@ -2,6 +2,8 @@ package ru.volkov.leetcode.easy.replace_elements_with_greatest_element_on_right_
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertArrayEquals;
+
 public class SolutionTest {
 
     @Test

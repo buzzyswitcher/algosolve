@@ -2,6 +2,8 @@ package ru.volkov.leetcode.easy.squares_of_a_sorted_array;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertArrayEquals;
+
 public class SolutionTest {
 
     @Test
