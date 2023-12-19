@@ -1,8 +1,20 @@
 package ru.volkov.leetcode.easy.height_checker;
 
+import java.util.Arrays;
+
 class Solution {
     public int heightChecker(int[] heights) {
 
-        return 0;
+        int[] sorted = Arrays.copyOf(heights, heights.length);
+        Arrays.sort(sorted);
+
+        int count = 0;
+        for (int i = 0; i < heights.length; i++) {
+            if (heights[i] != sorted[i]) {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
