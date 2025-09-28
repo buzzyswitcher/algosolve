@@ -1,66 +1,58 @@
 package ru.volkov.leetcode.easy.squares_of_a_sorted_array;
 
+
 import java.util.Arrays;
 
-class Solution {
+/**
+ * Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in
+ * non-decreasing order.
+ * Example 1:
+ *
+ * Input: nums = [-4,-1,0,3,10]
+ * Output: [0,1,9,16,100]
+ * Explanation: After squaring, the array becomes [16,1,0,9,100].
+ * After sorting, it becomes [0,1,9,16,100].
+ * Example 2:
+ *
+ * Input: nums = [-7,-3,2,3,11]
+ * Output: [4,9,9,49,121]
+ */
+public class Solution {
+
     public int[] sortedSquares(int[] nums) {
-        int[] squareInt = new int[nums.length];
+        return twoPointers(nums);
+    }
+
+    private int[] standardLibrary(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
-            squareInt[i] = nums[i] * nums[i];
+            nums[i] = nums[i] * nums[i];
         }
 
-        if (nums.length == 1) {
-            return squareInt;
-        } else {
-            Arrays.sort(squareInt);
-        }
-
-        return squareInt;
+        Arrays.sort(nums);
+        return nums;
     }
 
-    public static int[] trivialSolution(int[] nums) {
-        int[] squareInt = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            squareInt[i] = nums[i] * nums[i];
+    private int[] twoPointers(int[] nums) {
+        int[] sortedArray = new int[nums.length];
+        int sortedArray_idx = sortedArray.length - 1;
+
+        int head_idx = 0;
+        int tail_idx = nums.length - 1;
+
+        while (head_idx <= tail_idx) {
+            int head = nums[head_idx] * nums[head_idx];
+            int tail = nums[tail_idx] * nums[tail_idx];
+
+            if (head > tail) {
+                sortedArray[sortedArray_idx] = head;
+                head_idx++;
+            } else {
+                sortedArray[sortedArray_idx] = tail;
+                tail_idx--;
+            }
+            sortedArray_idx--;
         }
 
-        if (nums.length == 1) {
-            return squareInt;
-        } else {
-            Arrays.sort(squareInt);
-        }
-
-        return squareInt;
+        return sortedArray;
     }
-
-    public static int[] twoPointerSolution(int[] nums) {
-        int[] sqArray = new int[nums.length];
-
-        int rPoint = nums.length - 1;
-        int lPoint = 0;
-
-        for (int i = nums.length - 1; i >= 0; i--) {
-            int lSquare = nums[lPoint] * nums[lPoint];
-            int rSquare = nums[rPoint] * nums[rPoint];
-
-            if (rSquare > lSquare) {
-                sqArray[i] = rSquare;
-                rPoint--;
-            }
-
-            if (lSquare > rSquare) {
-                sqArray[i] = lSquare;
-                lPoint++;
-            }
-
-            if (lSquare == rSquare) {
-                sqArray[i] = lSquare;
-                lPoint++;
-            }
-        }
-
-        return sqArray;
-    }
-
-
 }

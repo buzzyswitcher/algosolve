@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 class Solution {
     public int heightChecker(int[] heights) {
-
-        int[] sorted = Arrays.copyOf(heights, heights.length);
+        int[] sorted = heights.clone();
         Arrays.sort(sorted);
 
         int count = 0;
@@ -14,7 +13,6 @@ class Solution {
                 count++;
             }
         }
-
         return count;
     }
 }

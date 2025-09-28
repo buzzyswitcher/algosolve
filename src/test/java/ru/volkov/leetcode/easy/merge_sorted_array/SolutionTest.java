@@ -7,46 +7,57 @@ import static org.junit.Assert.*;
 public class SolutionTest {
 
     @Test
-    public void testMerge() {
+    public void merge() {
+
+        int[] arr1 = new int[]{1,2,3,0,0,0};
+        int[] arr2 = new int[]{2,5,6};
+
         Solution solution = new Solution();
-        int[] nums1 = new int[]{1,2,3,0,0,0};
-        int[] nums2 = new int[]{2,5,6};
-
-        solution.merge(nums1, 3, nums2, 3);
-
-        assertArrayEquals(new int[]{1,2,2,3,5,6}, nums1);
+        solution.merge_2(arr1, 3, arr2, 3);
+        assertArrayEquals(new int[]{1,2,2,3,5,6}, arr1);
     }
 
     @Test
-    public void testMergeWhenNums2LengthIsZero() {
+    public void merge_1() {
+
+        int[] arr1 = new int[]{0};
+        int[] arr2 = new int[]{1};
+
         Solution solution = new Solution();
-        int[] nums1 = new int[]{1};
-        int[] nums2 = new int[]{};
-
-        solution.merge(nums1, 1, nums2, 0);
-
-        assertArrayEquals(new int[]{1}, nums1);
+        solution.merge_2(arr1, 0, arr2, 1);
+        assertArrayEquals(new int[]{1}, arr1);
     }
 
     @Test
-    public void testMergeWhenArraysLengthIsOne() {
+    public void merge_2() {
+
+        int[] arr1 = new int[]{2,0};
+        int[] arr2 = new int[]{1};
+
         Solution solution = new Solution();
-        int[] nums1 = new int[]{0};
-        int[] nums2 = new int[]{1};
-
-        solution.merge(nums1, 0, nums2, 1);
-
-        assertArrayEquals(new int[]{1}, nums1);
+        solution.merge_2(arr1, 1, arr2, 1);
+        assertArrayEquals(new int[]{1,2}, arr1);
     }
 
     @Test
-    public void testMerge_3() {
+    public void merge_3() {
+
+        int[] arr1 = new int[]{4,5,6,0,0,0};
+        int[] arr2 = new int[]{1,2,3};
+
         Solution solution = new Solution();
-        int[] nums1 = new int[]{2,0};
-        int[] nums2 = new int[]{1};
+        solution.merge_2(arr1, 3, arr2, 3);
+        assertArrayEquals(new int[]{1,2,3,4,5,6}, arr1);
+    }
 
-        solution.merge(nums1, 1, nums2, 1);
+    @Test
+    public void merge_4() {
 
-        assertArrayEquals(new int[]{1,2}, nums1);
+        int[] arr1 = new int[]{4,5,6,0,0,0};
+        int[] arr2 = new int[]{1,2,3};
+
+        Solution solution = new Solution();
+        solution.merge_2(arr1, 3, arr2, 3);
+        assertArrayEquals(arr1, new int[]{1,2,3,4,5,6});
     }
 }
