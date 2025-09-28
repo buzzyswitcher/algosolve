@@ -3,6 +3,9 @@ package ru.volkov.leetcode.easy._219_contains_duplicate_II;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/problems/contains-duplicate-ii
+ */
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         int begin = 0;
