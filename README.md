@@ -7,6 +7,7 @@
 - [219. Contains Duplicate II](./src/main/java/ru/volkov/leetcode/easy/_219_contains_duplicate_II/Solution.java)
 - [349. Find the Index of the First Occurrence in a String](./src/main/java/ru/volkov/leetcode/easy/_28_find_the_index_of_the_first_occurrence_in_a_string/Solution.java)
 - [557. Reverse Words in a String III](./src/main/java/ru/volkov/leetcode/easy/_557_reverse_string_III/Solution.java)
+- [643. Maximum Average Subarray I](./src/main/java/ru/volkov/leetcode/easy/_643_maximum_average_subarray/Solution.java)
 
 ## Binary search
 - [349. Intersection of Two Arrays](./src/main/java/ru/volkov/leetcode/easy/_349_intersection_of_two_arrays/Solution.java)
@@ -32,6 +33,7 @@
 
 ## Sliding window
 - [219. Contains Duplicate II](./src/main/java/ru/volkov/leetcode/easy/_219_contains_duplicate_II/Solution.java)
+- [643. Maximum Average Subarray I](./src/main/java/ru/volkov/leetcode/easy/_643_maximum_average_subarray/Solution.java)
 
 ## Two Pointers
 - [26. Remove Duplicates from Sorted Array](./src/main/java/ru/volkov/leetcode/easy/_26_remove_duplicates_from_sorted_array/Solution.java)
