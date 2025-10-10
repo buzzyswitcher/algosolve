@@ -1,5 +1,8 @@
 package ru.volkov.leetcode.easy._643_maximum_average_subarray;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * https://leetcode.com/problems/maximum-average-subarray-i
  */
