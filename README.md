@@ -37,6 +37,7 @@
 - [643. Maximum Average Subarray I](./src/main/java/ru/volkov/leetcode/easy/_643_maximum_average_subarray/Solution.java)
 - [1876. Substrings of Size Three with Distinct Characters](./src/main/java/ru/volkov/leetcode/easy/_1876_substrings_of_size_three_with_distinct_characters/Solution.java)
 - [1884. Minimum Difference Between Highest and Lowest of K Scores](./src/main/java/ru/volkov/leetcode/easy/_1984_minimum_difference_between_highest_and_lowest_of_k_scores/Solution.java)
+- [2269. Find the K-Beauty of a Number](./src/main/java/ru/volkov/leetcode/easy/_2269_find_the_k_beauty_of_a_number/Solution.java)
 
 ## Two Pointers
 - [26. Remove Duplicates from Sorted Array](./src/main/java/ru/volkov/leetcode/easy/_26_remove_duplicates_from_sorted_array/Solution.java)
