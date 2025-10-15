@@ -33,6 +33,7 @@
 - [349. Intersection of Two Arrays](./src/main/java/ru/volkov/leetcode/easy/_349_intersection_of_two_arrays/Solution.java)
 
 ## Sliding window
+- [3. Longest Substring Without Repeating Characters](./src/main/java/ru/volkov/leetcode/easy/_3_longest_substring_without_repeating_characters/Solution.java)
 - [219. Contains Duplicate II](./src/main/java/ru/volkov/leetcode/easy/_219_contains_duplicate_II/Solution.java)
 - [643. Maximum Average Subarray I](./src/main/java/ru/volkov/leetcode/easy/_643_maximum_average_subarray/Solution.java)
 - [1876. Substrings of Size Three with Distinct Characters](./src/main/java/ru/volkov/leetcode/easy/_1876_substrings_of_size_three_with_distinct_characters/Solution.java)
