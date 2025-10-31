@@ -50,6 +50,7 @@
 - [345. Reverse Vowels of a String](./src/main/java/ru/volkov/leetcode/easy/_345_reverse_vowels_of_a_string/Solution.java)
 - [349. Intersection of Two Arrays](./src/main/java/ru/volkov/leetcode/easy/_349_intersection_of_two_arrays/Solution.java)
 - [392. Is Subsequence](./src/main/java/ru/volkov/leetcode/easy/_392_is_subsequence/Solution.java)
+- [455. Assign Cookies](./src/main/java/ru/volkov/leetcode/easy/_455_assign_cookies/Solution.java)
 - [557. Reverse Words in a String III](./src/main/java/ru/volkov/leetcode/easy/_557_reverse_string_III/Solution.java)
 - [680. Valid Palindrome II](./src/main/java/ru/volkov/leetcode/easy/_680_valid_palindrome_ii/Solution.java)
 
